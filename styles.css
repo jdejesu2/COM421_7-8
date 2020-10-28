@@ -1,0 +1,162 @@
+body {
+	background-color: #fc2f29;
+	font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+	padding: 10px;
+}
+
+#page {
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+h1, h2, h3, p{
+	padding-bottom: 10px;
+}
+
+h1, h2, h3{
+	font-family: "Arial Black", sans-serif;
+	font-weight: 700;
+}
+
+h1{
+	font-size:36px; /*2.35em;*/
+}
+
+h2 {
+	padding-top: 25px;
+	font-size: 26px; /*1.55em;*/
+}
+
+h3 {
+	font-size: 18px;
+}
+
+.quote{
+	font-style: italic;
+	padding: 15px;
+	font-size: 16px;
+}
+
+.attr {
+	font-size: 13.5px; /* 75% of 36px*/
+	float: right;
+	padding: 15px;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.main-nav li {
+  float: left;
+	width: 33.3333333333%;
+}
+
+.main-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	background-color: black;
+}
+
+/* Change the link color to #111 (black) on hover */
+.main-nav li a:hover {
+  background-color: gray;
+}
+
+header{
+	grid-area: header;
+}
+
+.logo {
+  grid-area: logo;
+}
+.tagline {
+  grid-area: tagline;
+}
+.main-nav {
+  grid-area: main-nav;
+	padding-top: 10px;
+}
+
+.wrapper {
+  display: grid;
+	padding-top: 30px;
+	grid-template-columns: 640px 1fr;
+	grid-template-areas:
+		"header logo"
+		"tagline tagline"
+		"main-nav main-nav";
+}
+
+.FVLlogo {
+  grid-area: FVLlogo;
+}
+.contact {
+  grid-area: contact;
+	text-align: right;
+}
+.line {
+  grid-area: line;
+}
+
+.wrapper2 {
+  display: grid;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	grid-template-columns: 330px 340px 290px;
+	grid-template-areas: "FVLlogo line contact";
+}
+.small {
+	font-size: 10px;
+	width: 960px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.cards{
+	display: flex;
+}
+
+.cards img{
+	height: 250px;
+	padding-bottom: 10px;
+}
+
+.customers{
+	width: 66%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #05639a;
+	color: white;
+}
+
+.customerspic{
+	width: 336px;
+	height: 382px;
+	position: absolute;
+	margin-left: 654px;
+	margin-top: -382px;
+}
+
+.column{
+  flex: 1 50%;/*grow | shrink | basis */
+}
+
+.left_column, .center_column, .right_column {
+	width: 300px;
+	padding: 15px;
+}
+
+.right_column > img, .center_column > img, .left_column > img {
+	width: 100%;
+}
